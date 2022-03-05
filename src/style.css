@@ -149,7 +149,18 @@ body {
 }
 
 .footer--title {
-    font-size: 22px;
+    font-size: 35px;
     font-weight: 700;
+}
+
+.footer--list {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.footer--list-item {
+    margin-right: 15px;
+    cursor: pointer;
 }
 /* End footer section */
