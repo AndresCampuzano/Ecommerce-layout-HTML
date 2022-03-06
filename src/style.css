@@ -113,6 +113,7 @@ a {
     color: var(--gray-font-color);
     background-color: var(--white-color);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .hero--button:hover {
