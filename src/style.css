@@ -24,6 +24,10 @@ body {
     color: var(--black-font-color);
 }
 
+a {
+    color: var(--black-font-color)
+}
+
 .container {
     padding: var(--padding);
     margin: 0 auto;
@@ -225,4 +229,8 @@ body {
 .form--register {
     margin-top: 10px;
     font-weight: 300;
+}
+
+.form--register a {
+    font-weight: 500;
 }
