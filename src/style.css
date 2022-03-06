@@ -10,6 +10,7 @@
     --blue-button-hover-color: #0960b0;
     --height-header: 84px;
     --padding: 50px;
+    --dark-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) )
 }
 
 /* Resetting styles */
@@ -81,15 +82,15 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: var(--padding);
     align-items: center;
-    background-image: url("assets/ceramic-background.png");
+    background-image: var(--dark-image), url("assets/ceramic-background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    color: var(--white-font-color);
     text-align: center;
-    padding: var(--padding);
+    color: var(--white-font-color);
 }
 
 .hero--title {
@@ -180,7 +181,7 @@ a {
     justify-content: center;
     align-items: center;
     height: calc(100vh - var(--height-header));
-    background-image: url("assets/ceramic-tree.png");
+    background-image:  var(--dark-image), url("assets/ceramic-tree.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
