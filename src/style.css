@@ -181,7 +181,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - var(--height-header));
+    height: calc(90vh - var(--height-header));
     background-image:  var(--dark-image), url("assets/ceramic-tree.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -189,6 +189,7 @@ a {
 }
 
 .form {
+    margin: 150px 0;
     background-color: var(--white-color);
     box-shadow: 0 6px 14px rgb(0 0 0 / 10%);
 }
