@@ -6,6 +6,8 @@
     --white-color: #ffffff;
     --button-hover-color: #e1e1e1;
     --purple-font-color: #2e135e;
+    --blue-button-color: #0773d7;
+    --blue-button-hover-color: #0960b0;
     --height-header: 84px;
     --padding: 50px;
 }
@@ -18,7 +20,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--black-font-color);
 }
 
@@ -27,6 +29,12 @@ body {
     margin: 0 auto;
     max-width: 1200px
 }
+
+.main {
+    margin-top: var(--height-header);
+}
+
+/* <<<< Home (Index) page >>>> */
 
 /* Header section */
 .header {
@@ -63,10 +71,6 @@ body {
 }
 /* End header section */
 
-
-.main {
-    margin-top: var(--height-header);
-}
 
 /* Hero section */
 .hero {
@@ -164,3 +168,61 @@ body {
     cursor: pointer;
 }
 /* End footer section */
+
+/* <<<< Login and Sign up page >>>> */
+
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--height-header));
+    background-image: url("assets/ceramic-tree.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    background-color: var(--white-color);
+    box-shadow: 0 6px 14px rgb(0 0 0 / 10%);
+}
+
+.form--title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.form--item {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    width: 300px;
+}
+
+.form--item input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    color: var(--white-font-color);
+    background-color: var(--blue-button-color);
+    cursor: pointer;
+}
+
+.form--button:hover {
+    background-color: var(--blue-button-hover-color);
+}
+
+.form--register {
+    margin-top: 10px;
+    font-weight: 300;
+}
