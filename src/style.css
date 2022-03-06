@@ -43,6 +43,7 @@ a {
 
 /* Header section */
 .header {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -236,4 +237,27 @@ a {
 
 .form--register a {
     font-weight: 500;
+}
+
+/* <<<< Shop page >>>> */
+
+.products {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 32px;
+}
+
+.products--item-image {
+    transition: transform .2s;
+    width: 100%;
+}
+
+.products--item-image:hover {
+    transform: scale(1.03);
+}
+
+.products--item-price {
+    font-size: 25px;
+    font-weight: 700;
 }
